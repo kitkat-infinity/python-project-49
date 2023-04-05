@@ -5,3 +5,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+poetry run python brain_games/cli.py
