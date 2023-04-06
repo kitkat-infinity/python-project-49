@@ -1,7 +1,7 @@
-print('brain_games')
-print('Welcome to the Brain Games!')
+import prompt
 
-print('May I have your name? ', end='')
-name = input()
 
-print('Hello, ' + name + '!')
+def welcome_user():
+    name = prompt.string('May I have your name?')
+    print('Hello,', name, '!')
+    return name
