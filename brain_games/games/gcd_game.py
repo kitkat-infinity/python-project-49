@@ -11,4 +11,3 @@ def game_task():
     question = f"{number1} {number2}"
     correct_answer = str(gcd(number1, number2))
     return question, correct_answer
-
