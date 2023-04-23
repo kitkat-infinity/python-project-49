@@ -1,1 +1,5 @@
 .venv/bin
+.venv/
+dist/
+*.pyc
+__pycache__
