@@ -1,6 +1,7 @@
 import prompt
 from brain_games.cli import welcome_user
 
+ROUNDS = 3
 
 def play_round(number, correct_answer):
     print(f"Question: {number}")
@@ -18,11 +19,12 @@ def play_game(game):
     name = welcome_user()
     print(game.GAME_TASK)
     count = 0
-    while count < 3:
+    while count < ROUNDS:
         number, correct_answer = game.game_task()
         if play_round(number, correct_answer):
             count += 1
         else:
             print(f"Let's try again, {name}!")
             break
+    if count == ROUNDS:
         print(f'Congratulations, {name}!')
