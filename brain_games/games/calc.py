@@ -5,7 +5,7 @@ import operator
 GAME_TASK = 'What is the result of the expression?'
 
 
-def game_task():
+def get_answer_and_question():
     number1 = random.randint(1, 30)
     number2 = random.randint(1, 30)
     operators = {

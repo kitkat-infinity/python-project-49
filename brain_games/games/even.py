@@ -11,7 +11,7 @@ def is_even(number):
         return 'no'
 
 
-def game_task():
+def get_answer_and_question():
     number = random.randint(1, 100)
     correct_answer = str(is_even(number))
     return number, correct_answer

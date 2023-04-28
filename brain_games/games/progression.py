@@ -4,7 +4,7 @@ import random
 GAME_TASK = 'What number is missing in the progression?'
 
 
-def game_task():
+def get_answer_and_question():
     start_digit = random.randint(1, 20)
     count_digits = random.randint(5, 10)
     digits = [start_digit * i for i in range(1, count_digits + 1)]
@@ -16,4 +16,4 @@ def game_task():
 
 
 if __name__ == '__main__':
-    game_task()
+    get_answer_and_question()

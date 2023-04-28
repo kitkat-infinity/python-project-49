@@ -11,7 +11,7 @@ def is_prime(digit):
     return 'yes'
 
 
-def game_task():
+def get_answer_and_question():
     digit = random.randint(2, 100)
     question = digit
     correct_answer = str(is_prime(digit))
@@ -19,4 +19,4 @@ def game_task():
 
 
 if __name__ == '__main__':
-    game_task()
+    get_answer_and_question()

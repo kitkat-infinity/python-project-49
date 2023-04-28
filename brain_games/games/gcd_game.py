@@ -5,7 +5,7 @@ import random
 GAME_TASK = 'Find the greatest common divisor of given numbers.'
 
 
-def game_task():
+def get_answer_and_question():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
     question = f"{number1} {number2}"
