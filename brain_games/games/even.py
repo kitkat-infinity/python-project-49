@@ -4,7 +4,7 @@ import random
 GAME_TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(number):
+def number_even(number):
     if number % 2 == 0:
         return 'yes'
     else:
@@ -13,5 +13,5 @@ def is_even(number):
 
 def get_answer_and_question():
     number = random.randint(1, 100)
-    correct_answer = str(is_even(number))
+    correct_answer = str(number_even(number))
     return number, correct_answer
